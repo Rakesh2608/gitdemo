@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -12,7 +13,7 @@ public class Main {
         Car c5=new Car(6000000,1500);
 
         List<Car> carList=new ArrayList<>(Arrays.asList(c1,c2,c3,c4,c5));
-
+        carList.sort(new EngineComparator());
         System.out.println(carList);
 
     }
