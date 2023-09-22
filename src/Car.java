@@ -1,10 +1,12 @@
 public class Car {
     private int price;
     private int engine;
+    private int maxSpeed;
 
-    public Car(int price, int engine) {
+    public Car(int price, int engine, int maxSpeed) {
         this.price = price;
         this.engine = engine;
+        this.maxSpeed = maxSpeed;
     }
 
     public int getPrice() {
@@ -23,11 +25,22 @@ public class Car {
         this.engine = engine;
     }
 
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+
+
     @Override
     public String toString() {
         return "Car{" +
                 "price=" + price +
                 ", engine=" + engine +
+                ", maxSpeed=" + maxSpeed +
                 '}';
     }
 }
